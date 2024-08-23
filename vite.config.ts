@@ -10,10 +10,6 @@ export default defineConfig({
                 {
                     src: "assets/*",
                     dest: "assets"
-                },
-                {
-                    src: "manifest.webmanifest",
-                    dest: "."
                 }
             ]
         })
