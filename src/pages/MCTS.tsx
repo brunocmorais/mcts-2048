@@ -1,9 +1,9 @@
-import { Fragment } from "react/jsx-runtime"
 import { GameComponent } from "../components/game/GameComponent";
 import { Direction, Game } from "../game/Game";
 import { MonteCarlo } from "../game/MonteCarlo";
 import { Component } from "react";
 import { sleep } from "../util/Util";
+import { Navbar } from "../components/navbar/NavbarComponent";
 
 type State = {
     game : Game,
@@ -47,7 +47,8 @@ export class MCTS extends Component<{}, State> {
 
     render() {
         return (
-            <Fragment>
+            <main>
+                <Navbar />
                 <div className="container">
                     <div className="row g-4">
                         <div className="col-12">
@@ -81,7 +82,7 @@ export class MCTS extends Component<{}, State> {
                         </div>
                     </div>
                 </div>
-            </Fragment>
+            </main>
         );
     }
 }

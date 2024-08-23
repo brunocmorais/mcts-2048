@@ -1,6 +1,6 @@
 import { createRoot } from "react-dom/client";
 import { HashRouter, Routes, Route } from "react-router-dom";
-import Main from "./pages/Main";
+import { Home } from "./pages/Home";
 import { MCTS } from "./pages/MCTS";
 
 
@@ -10,7 +10,7 @@ createRoot(root).render(
     <HashRouter>
         <Routes>
             <Route path="/" 
-                element={<Main />}
+                element={<Home/>}
             />
             <Route path="/mcts"
                 element={<MCTS />}
